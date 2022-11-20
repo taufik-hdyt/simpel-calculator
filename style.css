@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,600;1,500&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+
+body{
+    font-family: 'Open Sans',sans-serif;
+    background-color:black;
+    font-family: 'Prompt', sans-serif;
+}
+#container{
+    margin: 0;
+}
+#calculator{
+    width: 320px;
+    height: 520px;
+    background-color: #EDEDED;
+    margin: 0 auto;
+    top: 20px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#result{
+    height: 120px;
+
+}
+#history{
+    margin: 0 20px;
+    text-align: right;
+    height: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+    color: #919191;
+}
+#output{
+    text-align: right;
+    height: 30px;
+    margin: 10px 20px;
+    font-size: 30px;
+
+}
+#keyboard{
+    height: 400px;
+}
+.operator, .number, .empty{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px black;
+}
+
+.empty{
+    opacity: 0;
+}
+
+
+.number, .empty{
+    background-color: #eaedef;
+}
+
+.number:hover{
+    background-color: blueviolet;
+    color: white;
+    font-weight: 800;
+}
+
+.operator:hover{
+    opacity: 0.4;
+    color: black;
+}
+
+.operator{
+    background-color:lightgrey;
+}
+.number, .operator{
+    cursor: pointer;
+}
+.number:active, .operator:active{
+    font-size: 13px;
+}
+.number:focus, .operator:focus, .empty:focus{
+    outline: 0;
+}
+
+/*variasi warna tombol*/
+button:nth-child(4){
+    font-size: 20px;
+    background-color: #009EFF;
+}
+button:nth-child(8){
+    font-size: 20px;
+    background-color: #C060A1;
+}
+button:nth-child(12){
+    font-size: 20px;
+    background-color: #FFE15D;
+}
+button:nth-child(16){
+    font-size: 20px;
+    background-color: #FFE9B1;
+}
+button:nth-child(20){
+    font-size: 20px;
+    background-color: #B9E0FF;
+}
+
+
